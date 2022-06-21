@@ -459,52 +459,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
-          <a class="modal-close-icon">
-            <svg>
+            <svg class="modal-close-icon">
               <use href="./images/icon.svg#icon-close"></use>
-            </svg>        
-          </a>
+            </svg>     
         </button>
+        <h2 class="modal-tittle">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="button modal-form">
-          <h2 class="modal-tittle">Zostaw swoje dane w formularzu poniżej</h2>
-         
-          <label>Imie
-            <a class="modal-window-icon" href="">
-              <svg>
+
+          <label class="modal-window-list">Imie
+            <input class="modal-window" type="text" name="name"> 
+              <svg class="modal-window-icon">
                 <use href="./images/icon.svg#icon-person"></use>
-              </svg>        
-            </a>
-            <input class="modal-window" type="text" name="name">            
+              </svg>                                  
           </label>
 
-          <label>Telefon
-            <a class="modal-window-icon" href="">
-              <svg>
+          <label class="modal-window-list">Telefon
+            <input class="modal-window" type="tel" name="phone-number"> 
+              <svg class="modal-window-icon">
                 <use href="./images/icon.svg#icon-phone"></use>
-              </svg>        
-            </a>
-            <input class="modal-window" type="tel" name="phone-number">           
+              </svg>                                    
           </label>
 
-          <label>Email
-            <a class="modal-window-icon" href="">
-              <svg>
+          <label class="modal-window-list">Email
+            <input class="modal-window" type="email" name="email"> 
+              <svg class="modal-window-icon">
                 <use href="./images/icon.svg#icon-email"></use>
-              </svg>        
-            </a>
-            <input class="modal-window" type="email" name="email">            
+              </svg>      
           </label>
 
           <label>Komentarz
-            <input class="modal-window-2" type="text" name="comment" placeholder="Wprowadź tekst">
+            <textarea class="modal-window-2" rows="5" name="comment" placeholder="Wprowadź tekst"></textarea>
           </label>
 
           <label>
             <input class="modal-checkbox" type="checkbox" name="regulations" required>
-            Oświadczam iż akceptuję 
-            <a class="modal-checkbox-link" href=""> Regulamin</a> i <a class="modal-checkbox-link" href="">Politykę Prywatności</a>
-          </label>
-
+            <p class="modal-checkbox-text">Oświadczam iż akceptuję <span class="modal-checkbox-link" href=""> Regulamin</span> i <span class="modal-checkbox-link" href=""> Politykę Prywatności</span>
+            </label> </p>                 
           <button class="button-item" type="submit">Wyślij</button>
         </form>
       </div>    
